@@ -46,15 +46,9 @@
         <div class="overlay">
         <section class="hero">
             <div class="container hero-container">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <!--Заказать услугу, кнопка-->
-            <button data-modal-open class="btn btn-main" type="button">Заказать услугу</button>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    
-                    <button data-modal-close class="close-modal-btn">X</button>
-                </div>
-            </div>
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <!--Заказать услугу, кнопка-->
+                <button data-modal-open class="btn btn-main" type="button">Заказать услугу</button>
             </div>
         </section>
         </div>
@@ -235,56 +229,103 @@
         </section>
     </main>
     <!--Подвал-->
+    <div class="backdrop is-hidden" data-modal>
+        <!--backdrop is-hidden-->
+        <div class="modal">
+            <form action="#" class="form js-speaker-form">
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="form-field">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-input" name="user-name" id="name">
+                </div>
+    
+                <div class="form-field">
+                    <label for="tel" class="form-label">Телефон</label>
+                    <input type="tel" class="form-input" name="user-name" id="tel">
+                </div>
+    
+                <div class="form-field">
+                    <label for="email" class="form-label">Почта</label>
+                    <input type="email" class="form-input" name="user-name" id="email" autocomplete="off">
+                </div>
+    
+                <div class="form-field">
+                    <label for="comment" class="form-label">Комментарий</label>
+                    <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                </div>
+    
+                <div class="form-field">
+                    <input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                </div>
+
+                <button class="btn btn-submit" type="submit">Отправить</button>
+            </form>
+    
+            <button data-modal-close class="close-modal-btn">X</button>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
           <div class="footer-all">
-            <div class="footer-left">
-                <a class="link logo footer-logo" href="#"><span class="web-logo">Web</span><span class="studio">Studio</span></a>
-                <address class="address">
-                    <ul class="list address-list">
-                    <li class="address-item"><a class="link address-link-map" href="https://goo.gl/maps/qvFhKNeTqDzLGV248" target="_blank"
-                            rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="address-item"><a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="address-item"><a class="link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul> 
-                </address>
-            </div>
-              <div class="join">
-                <p class="join-title">Присоединяйтесь</p>
-                <ul class="join-list list">
-                    <li class="join-social-item">
-                        <a class="join-social-link" href="#" aria-label="instagram">
-                            <svg class="join-social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#instagram_w">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-social-item">
-                        <a class="join-social-link" href="#" aria-label="twitter">
-                            <svg class="join-social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#twitter_w">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-social-item"><a class="join-social-link" href="#" aria-label="facebook">
-                            <svg class="join-social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#facebook-w">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join-social-item">
-                        <a class="join-social-link" href="#" aria-label="linkedin">
-                            <svg class="join-social-icon" width="20" height="20">
+                    <div class="footer-left">
+                        <a class="link logo footer-logo" href="#"><span class="web-logo">Web</span><span class="studio">Studio</span></a>
+                        <address class="address">
+                            <ul class="list address-list">
+                            <li class="address-item"><a class="link address-link-map" href="https://goo.gl/maps/qvFhKNeTqDzLGV248" target="_blank"
+                                    rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address-item"><a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="address-item"><a class="link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                            </ul> 
+                        </address>
+                    </div>
+                    <div class="footer-join">
+                        <p class="footer-title">Присоединяйтесь</p>
+                        <ul class="join-list list">
+                            <li class="join-social-item">
+                                <a class="join-social-link" href="#" aria-label="instagram">
+                                    <svg class="join-social-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#instagram_w">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="join-social-item">
+                                <a class="join-social-link" href="#" aria-label="twitter">
+                                    <svg class="join-social-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#twitter_w">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="join-social-item"><a class="join-social-link" href="#" aria-label="facebook">
+                                    <svg class="join-social-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#facebook-w">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="join-social-item">
+                                <a class="join-social-link" href="#" aria-label="linkedin">
+                                    <svg class="join-social-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#linkedin-w">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-submit">
+                        <p class="footer-title">Подпишитесь на рассылку</p>
+                        <div class="form-field-footer">
+                            <input type="email" class="form-input-footer" name="user-name" id="email" autocomplete="off" placeholder="E-mail">
+                            <button class="btn btn-footer">Подписаться <svg class="join-social-icon" width="20" height="20">
                                 <use href="./images/icons.svg#linkedin-w">
                                 </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-              </div>
+                            </svg></button>
+                        </div>
+                    </div>
             </div>
         </div>
     </footer>
